@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dietas</Main></title>
+	<link rel="stylesheet" href="../css/dietas.css">
+	<link rel="icon" type="image" href="../Imagenes/imagen_2023-05-16_112614828.png">
+</head>
+<body>
+	<script src="../javascript/dietas.js"></script>
+	<a href="../Inicio de Sesión.html"><img src="../Imagenes/imagen_2023-05-16_112614828.png" title="Cerrar sesión" class="imagen"></a>	
+	<p id="fecha" class="hora">Hora: </p>
+	<p id="fecha2" class="fecha">Fecha:</p>
+	<br><br><br>
+	<nav>
+		<ul class="menu">
+			<li><a href="Inicio.html">Inicio</a></li>
+			<li><a href="formulario.html">Cuestionario de Cliente</a></li>
+			<li><a href="dietas.html">Dietas</a></li>
+		</ul>
+</nav>
+	<div class="div2">
+		<br><br>
+        <h2 class="texto">¿Cómo preparamos las dietas?</h2>
+		<br><br><br><br>
+            <p class="parrafo">En nuestra empresa contamos con grandes profesionales, los cuales tienen todo tipo de estudios en el ámbito de la medicina y nutricionismo.<br>
+			Además, adaptamos la dieta a la persona, con lo que no nos importará que nos contactes.</p>
+			<br><br><br><br>
+			</div>
+			<br><br><br><br>
+			<div class="rutinas">
+				<p class="texto2">NUESTROS EJERCICIOS SEGÚN LAS NECESIDADES DE CADA PERSONA</p>
+                <p>Menú:</p>
+			<ul>
+			<div class="rutan">
+				<li onmousedown="rutinas()" onmouseover="rutinas2()">Tipos de Rutinas:</li>
+				<ul>
+					<li onmousedown="bajar()" id="variable1" style="display: none;">Bajar Peso</li>
+					<ul>
+						<li id="tonificar" onmousedown="tonificar()" style="display: none;">Tonificar</li>
+						<li id="aeros" onmousedown="aerobicos()" style="display: none;">Aeróbicos</li>
+					</ul>
+					<li onclick="mantener()" id="variable2" style="display: none;">Mantener</li>
+					<ul>
+						<li onmousedown="moderado()" id="moderar" style="display: none;">Ejercicio Moderado</li>
+						<li onmousedown="potencia()" id="potenciar" style="display: none;">Ejercicio con potencia</li>
+					</ul>
+					<li onmousedown="ganar()" id="variable3" style="display: none;">Subir Masa Muscular</li>
+				</ul>
+			</div>
+			<div class="we">
+				<li onmousedown="ejercicios()" onmouseover="ejercicios2()">Tipo de ejercicio:</li>
+				<ul>
+					<li onmousedown="flexibilidad()" onmouseover="" id="flex" style="display: none;">Flexibilidad</li>
+					<li onmousedown="cardio()"  id="cardio" style="display: none;">Cardiovascular</li>
+					<li onmousedown="postura()" onmouseover="" id="postura" style="display: none;">Postural</li>
+				</ul>
+			</div>
+			<div class="pesos">
+				<li onmousedown="peso()" onmouseover="peso2()">Peso:</li>
+				<ul>
+					<li onmousedown="delgado()" id="peso1" style="display: none;">Delgado</li>
+					<li onmousedown="medio()" id="peso2" style="display: none;">Medio</li>
+					<li onmousedown="sobrepeso()" id="peso3" style="display: none;">Sobrepeso</li>
+				</ul>
+			</div>
+			</ul>
+			<ul>
+			<li style="display: none;" id="base1">En base a los ejercicos, te recomendamos que hagas: </li>
+			<ul>
+				<li style="display: none;" id="flexi" class="tipo">Flexibilidad:</li>
+				<ul id="infoflex" style="display: none;" class="ejercicio">
+					<li>Torsión de espalda: Siéntate en el suelo y estira la pierna derecha. Luego, dobla la izquierda y pásala por encima de la derecha. Ahora, pon el brazo izquierdo por encima de la rodilla flexionada (la izquierda) y presiona con el codo para hacer una torsión de espalda. Aplica fuerza en la presión 
+						para mayor efectividad. Luego, repite con el otro costado.</li>
+					<li>Estiramiento frontal: Ponte de pie firme y apoya la mano derecha en la pared. Flexiona la rodilla izquierda hacia atrás y toma el pie con la mano izquierda. Tira del pie, intentando llegar hasta la altura del cuello. Mantén firme la pierna derecha y el brazo de apoyo estirado para conservar el equilibrio.
+						Luego, realiza el estiramiento con la otra pierna.</li>
+				</ul>
+				<li style="display: none;" id="card" class="tipo">Cardiovascular:</li>
+				<ul style="display: none;" id="infocard" class="ejercicio">
+					<li>Carrera a pie: Es la principal, la número uno por excelencia, ya que puedes hacerla en cualquier lugar, 
+						a cualquier hora, con un grupo de entrenamiento, solo… 
+						Además, en lugares fríos o cuando vamos escasos de tiempo, podemos hacerla dentro del gimnasio gracias a las cinta de correr. 
+						Se dice que se gasta aproximadamente tu peso corporal en calorías por cada kilómetro que corres.</li>
+					<li>Remo: Es una buena alternativa si necesitas descansar las piernas o tienes alguna lesión que no te permita realizar una actividad con impacto. 
+						Con este trabajo vas a desarrollar la fuerza de tu espalda y además trabajarás la coordinación de brazos y piernas.</li>
+					<li>Boxeo: Si tienes un compañero de entrenamiento, o simplemente un saco en el gimnasio, podéis aficionaros a este deporte que sacará lo mejor de otros. 
+						Con un entrenamiento de intervalos donde trabajemos durante 2-3 minutos comprobaremos lo exigente que puede llegar a ser.</li>
+				</ul>
+				<li style="display: none;" id="post" class="tipo">Postura:</li>
+				<ul style="display: none;" id="infopost" class="ejercicio">
+					<li>Yoga y Tai Chi: Los ejercicios de inspiración oriental, como el yoga y el tai chi, reciben mucha publicidad por una buena razón: levantan el ánimo, aumentan la flexibilidad y hacen maravillas con la postura. 
+						Una variedad de enfoques diferentes para el yoga en particular asegura que cualquiera pueda encontrar la práctica adecuada, desde el yoga de flujo de bombeo cardiovascular hasta versiones más meditativas que se enfocan en la respiración profunda y las posturas conscientes.</li>
+					<li>Apoyarse contra la pared: Apoyarse contra la pared es un excelente punto por el que comenzar. Ponte de pie con la espalda contra la pared y alinea todo tu cuerpo con ella (de la cabeza a los pies). Empuja ligeramente la zona pélvica hacia adelante para que las lumbares puedan descansar completamente contra la pared.</li>
+					<li>Descanso abdominal: Tal vez sea el más fácil de todos. Este ejercicio requiere poco o ningún esfuerzo más allá de acostarse, estirado, boca abajo. Si lo haces, puede ayudarte a estirar los músculos a lo largo de la columna vertebral. </li>
+				</ul>
+			</ul>
+			</ul>
+			<ul>
+			<li style="display: none;" id="base2">En la rutina que quieres hacer:</li>
+			<ul>
+				<li style="display: none;" id="mantener" class="tipo">Mantener:</li>
+				<ul>
+					<li style="display: none;" id="moderado">Moderada:</li>
+					<ul style="display: none;" id="ejercmod" class="ejercicio">
+						<li>Caminata rápida (1 Kilometro en 15 minutos).</li>
+						<li>Trabajo moderado en el jardín (rastrillar, embolsar hojas o pasar la cortadora de césped).</li>         
+						<li>Jugar en forma activa con niños.</li>
+					</ul>
+					<li style="display: none;" id="poten">Potencia:</li>
+					<ul style="display: none;" id="ejerpot" class="ejercicio">
+						<li>Trotar o correr.</li>
+						<li>Patinar en ruedas o en línea a un ritmo acelerado</li>
+						<li>Nadar.</li>
+					</ul>
+				</ul>
+				<li style="display: none;" id="ganar" class="tipo">Ganar Masa Muscular:</li>
+				<ul style="display: none;" id="ejercganar" class="ejercicio">
+					<li>Flexiones tradicionales: Realice flexiones tradicionales durante 30 segundos, manteniendo los brazos alejados de los hombros y baje hasta formar un ángulo de 90º con los codos. 
+						Durante este ejercicio es muy importante mantener el abdomen contraído para que la espalda quede bien alineada, evitando lesiones.</li>
+					 <li>Flexiones estáticas o plancha: Repita el ejercicio anterior, pero esta vez baje y mantenga la posición con el ángulo del codo a 90º durante 30 segundos. 
+						 Nuevamente, si el ejercicio es muy difícil, puede realizarlo colocando las rodillas en el piso para disminuir el peso.</li>
+					<li>Sentadillas tradicionales: Realice una sentadilla tradicional y vuelva a subir, repita durante 30 segundos. 
+						Para realizar este ejercicio, es fundamental mantener una buena postura para trabajar los músculos correctos y evitar las lesiones. </li>
+				</ul>
+				<li style="display: none;" id="adelga" class="tipo">Para Adelgazar:</li>
+				<ul>
+					<li style="display: none;" id="infomadel" class="tipo">Ejercicios para tonificar, adelgazar y quemar grasa:</li>
+					<ul style="display: none;" id="ejeradel" class="ejercicio">
+						<li>Comienza de forma gradual y vete incrementando la intensidad y duración del ejercicio, poco a poco.</li>
+						<li>El ejercicio aeróbico para que sea efectivo debe tener una duración de al menos 20 minutos.</li>
+						<li>Los ejercicios de tonificación muscular deben durar unos 5-15 minutos.  
+							Con 13-20 repeticiones por serie es suficiente.</li>
+					</ul>
+					<li style="display: none;" id="aerobicos" class="tipo">Ejercicios aeróbicos para adelgazar:</li>
+					<ul style="display: none;" id="infoareo" class="ejercicio">
+						<li>Intenta realizar 30 minutos de actividad cardiovascular moderada, 5 veces a la semana. 
+							Actividades que aumentan la frecuencia cardiaca y que hacen sudar pero permiten mantener una conversación: caminar, nadar, andar en bici, bailar, etc. 
+							En caso de sobrepeso incrementa a 40-60 minutos diarios.</li>
+						<li>Es recomendable intentar practicar 20 minutos de actividad cardiovascular intensa, 3 veces a la semana: fútbol, baloncesto, tenis, correr, step, aeróbic, spinning, etc.</li>
+						<li>Hacer más series o más repeticiones de las recomendadas, no es conveniente porque produce agotamiento muscular y el incremento de gasto energético no es significativo.</li>
+					</ul>
+				</ul>
+			</ul>
+		</ul>
+			<ul>
+			<li style="display: none;" id="base3">En base al peso:</li>
+			<ul class="ejercicio">
+			<li id="delgado" style="display: none;">Delgado: Se recomienda empezar con muchas repeticiones de no mucho peso para ir cogiendo masa corporal hasta coger sobretodo masa muscular. Se recomiendan ejercicios con mancuernas para los brazos, por ejemplo.</li>
+			<li id="medio"  style="display: none;">Medio: Se recomienda mantener un equilibrio entre peso y repeteciones dado que lo que queremos es ganar masa muscular o incluso perder peso. Se recomienda ejercicios de pocas repeticio, pero con un peso algo más elevado.</li>
+			<li id="sobrepeso" style="display: none;">Sobrepeso: Se recomienda empezar al igual que con las personas delgadas, priorizar las repeticiones al peso, dado que nuestro objetivo no será bajar de peso demasadio rápido, sino que será ir bajando y aumentando de peso progresivamente</li>
+			</ul>
+			<br>
+			</ul>
+		</div>
+			<br>
+			<form>
+				<fieldset>
+			<legend class="field">Calculadora de Calorias Diarias</legend>	
+			<p class="parrafo2">¡¡¡Ten en cuenta que esto es una estimación y que se deberá tomar como una aproximación a la realidad!!!</p>
+			<br>
+			<table class="tabla2">
+				<tr>
+					<td colspan="2" class="preguntar"><label for="sexo" class="ejercicios">Género<font color="red">*</font>:</label></td>
+				</tr>
+				<tr>
+					<td><img src="../Imagenes/274519.png" class="icono"></td>
+					<td><img src="../Imagenes/woman_icon-icons.com_49954.png" class="icono"></td>
+				</tr>
+				<tr>		
+					<td class="preguntar"><input type="radio" value="1" name="sexo" id="sexo" checked/><font color="yellow" face="cursive">Hombre</font></td>
+					<td class="preguntar"><input type="radio" value="2" name="sexo" id="sexo" /><font color="yellow" face="cursive">Mujer</font></td>
+				</tr>
+			</table>
+
+				<br>
+				<table class="tabla">
+					<tr>
+						<td><img src="../Imagenes/weight_kilogram_icon_138014.png" class="icono"></td>
+						<td><img src="../Imagenes/age.png" class="icono"></td>
+						<td><img src="../Imagenes/4440305.png" class="icono"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><br></td>
+					</tr>
+					<tr>
+						<td class="preguntar"><label for="peso" class="ejercicios">Peso<font color="red">*</font>:</label><input type="number"  value="0" name="peso" min="0" max="300" id="peso"><font color="yellow" face="cursive"> Kg</font></td>
+						<td class="preguntar"><label for="edad" class="ejercicios">Edad<font color="red">*</font>:</label><input type="number"  value="0" id="edad" name="edad" min="0" max="100"></td>
+						<td class="preguntar"><label for="altura" class="ejercicios">Altura<font color="red">*</font>:</label><input type="number" value="0" id="altura" name="altura" min="0" max="250"><font color="yellow" face="cursive"> cm</font></td>
+					</tr>
+				</table>
+				<br><br>
+				<table>
+					<tr>
+						<td colspan="5" class="ejercicios"><label for="pregunta">Tipo de Ejercicio<font color="red">*</font></label></td>
+						
+					</tr>
+					<tr>
+						<td colspan="5"><br></td>
+					</tr>
+					<tr class="pregunta">
+						<td><input type="radio" value="1" name="pregunta" id="nada" checked/><font color="yellow" face="cursive">Muy Ligero</td>
+						<td><input type="radio" value="2" name="pregunta" id="nada"/><font color="yellow" face="cursive">Ligero</font></td>
+						<td><input type="radio" value="3" name="pregunta" id="poco"/><font color="yellow" face="cursive">Moderado</font></td>
+						<td><input type="radio" value="4" name="pregunta" id="diario"/><font color="yellow" face="cursive">Activo</font></td>
+						<td><input type="radio" value="5" name="pregunta" id="depor"/><font color="yellow" face="cursive">Muy Activo</font></td>
+					</tr>
+					<tr>
+						<td><br></td>
+						<td><br></td>
+						<td><br></td>
+						<td><br></td>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><img src="../Imagenes/png-transparent-sitting-autorite-de-regulation-des-activites-ferroviaires-furniture-sedentary-lifestyle-darma-inc-others-angle-furniture-text-thumbnail-removebg-preview.png" class="icono"></td>
+						<td><img src="../Imagenes/png-transparent-gardening-computer-icons-gardener-others-angle-hand-logo-removebg-preview.png" class="icono"></td>
+						<td><img src="../Imagenes/png-transparent-walking-parcel-computer-icons-health-pedestrian-walking-icon-angle-text-hand-removebg-preview.png" class="icono"></td>
+						<td><img src="../Imagenes/png-transparent-physical-exercise-computer-icons-exercise-physical-fitness-text-hand-removebg-preview.png" class="icono"></td>
+						<td><img src="../Imagenes/png-transparent-computer-icons-physical-exercise-sport-physical-fitness-fast-miscellaneous-physical-fitness-text-removebg-preview.png" class="icono"></td>
+					</tr>
+					<tr>
+						<td class="preguntar"><font color="yellow" face="cursive">1 hora/semana</font></td>
+						<td class="preguntar"><font color="yellow" face="cursive">1-2 horas/semana</td></font>
+						<td class="preguntar"><font color="yellow" face="cursive">3-5 horas/semana</td></font>
+						<td class="preguntar"><font color="yellow" face="cursive">8-10 horas/semana</td></font>
+						<td class="preguntar"><font color="yellow" face="cursive">+10 horas/semana</td></font>
+					</tr>
+				</table>
+				<br>
+				<input type="button" value="Calcular" onclick="calcular()" class="rer">
+				<input type="reset" value="Resetear Valores" onclick="resetear()" class="rer">
+			</fieldset>
+			</form>
+			<br><br>
+			<table class="t" id="t" style="display:none">
+				<tr>
+					<td class="enuncias" colspan="3">Mantener</td>
+					<td class="enuncias"colspan="3">Ganar Peso</td>
+					<td class="enuncias"colspan="3">Perder Peso</td>
+				</tr>
+				<tr>
+					<td colspan="3"><img src="../Imagenes/png-clipart-scalable-graphics-icon-a-weight-scale-weight-loss-cartoon-removebg-preview.png" class="icono"></td>
+					<td colspan="3"><img src="../Imagenes/1813442.png" class="icono"></td>
+					<td colspan="3"><img src="../Imagenes/1813470.png" class="icono"></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="calorias">Calorias</td>
+					<td colspan="2" class="calorias">Calorias</td>
+					<td colspan="3"class="calorias">Calorias</td>
+				</tr>
+				<tr>
+					<td id="totald" colspan="3" class="numero"></td>
+					<td id="gp" colspan="3" class="numero"></td>
+					<td id="p" colspan="3" class="numero"></td>
+				</tr>
+			</table>
+			<br><br>
+			<table border="5" borderColor="black" class="izquierda" id="te" style="display: none;">
+				<tr>
+					<td class="enuncias" colspan="2">Desayuno</td>
+					<td colspan="2" class="enuncias">Media Mañana</td>
+					<td colspan="2" class="enuncias">Comida</td>
+					<td colspan="2" class="enuncias">Merienda</td>
+					<td colspan="2" class="enuncias">Cena</td>
+				</tr>
+				<tr>
+					<td class="calorias">Calorias</td>
+					<td class="calorias">Calorias en Base al ejercicio diario</td>
+					<td class="calorias">Calorias</td>
+					<td class="calorias">Calorias en Base al ejercicio diario</td>
+					<td class="calorias">Calorias</td>
+					<td class="calorias">Calorias en Base al ejercicio diario</td>
+					<td class="calorias">Calorias</td>
+					<td class="calorias">Calorias en Base al ejercicio diario</td>
+					<td class="calorias">Calorias</td>
+					<td class="calorias">Calorias en Base al ejercicio diario</td>
+				</tr>
+				<tr>
+					<td id="h" class="numero"></td>
+					<td id="hd" class="numero"></td>
+					<td id="mm" class="numero"></td>
+					<td id="mmd" class="numero"></td>
+					<td id="c" class="numero"></td>
+					<td id="cd" class="numero"></td>
+					<td id="m" class="numero"></td>
+					<td id="md" class="numero"></td>
+					<td id="cen" class="numero"></td>
+					<td id="cend" class="numero"></td>
+				</tr>
+			</table>
+			<br>
+			<script>fecha()</script>
+</body>
+</html>

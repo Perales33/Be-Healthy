@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="../css/formulario.css">
+	<link rel="icon" type="image" href="imagen_2023-05-16_112614828.png">
+</head>
+<body>
+	 <script src="../javascript/formulario.js"></script>
+	 <p id="fecha" class="hora">Hora: </p>
+	 <p id="fecha2" class="fecha">Fecha:</p>
+	 <script>fecha()</script>
+	 <br><br>
+	<h1 class="we">CUESTIONARIO DE USUARIO</h1>
+	<br>
+	<form method="post" action="Inicio.html" enctype="multipart/form-data">
+	<form>
+	<fieldset>
+		<legend>DATOS PERSONALES</legend>
+		<br>
+			<label for="nombre">Nombre<font color="red">*</font>:</label>
+            	<input type="text" id="nombre" onchange="nombrre()" placeholder="Introduzca Nombre" pattern="[a-zA-Z]{0-100}">
+		 <br>
+		 	<label for="primero">Primer Apellido<font color="red">*</font>:</label>
+            	<input type="text" id="primero"  onchange="prim()" placeholder="Introduzca Primer Apellido" pattern="[a-zA-Z]{0-100}">
+        <br>
+			<label for="segundo" onclick="segundo()">Segundo Apellido<font color="#ECB411">*</font>:</label>
+            	<input type="text" id="segundo" onchange="sengo()" placeholder="Introduzca Segundo Apellido" pattern="[a-zA-Z]{0-100}">
+		<br>
+			<label for="nacimiento">Fecha de Nacimiento:</label>
+			<label for="dia" onclick="dia()">Día<font color="red">*</font>:</label>
+				<select id="dia" name="dia" onchange="dias()">
+					<option value="" default>--Día--</option>
+					<option value="" disabled>------</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+			<label for="m" onclick="mes()">Mes<font color="red">*</font>:</label>
+				<select id="m" name="mes" onchange="meses()">
+					<option value="" default>--Mes del Año--</option>
+					<option value="" disabled>--------------</option>
+					<option value="Enero">Enero</option>
+					<option value="Febrero">Febrero</option>
+					<option value="Marzo">Marzo</option>
+					<option value="Abril">Abril</option>
+					<option value="Mayo">Mayo</option>
+					<option value="Junio">Junio</option>
+					<option value="Julio">Julio</option>
+					<option value="Agosto">Agosto</option>
+					<option value="Septiembre">Septiembre</option>
+					<option value="Octubre">Octubre</option>
+					<option value="Noviembre">Noviembre</option>
+					<option value="Diciembre">Diciembre</option>
+				</select>
+        <br>
+			<label for="sexo">Sexo<font color="red">*</font>:</label>
+                <select name="sexo" onchange="sexos()" id="sexo" value="Sexo">
+                    <option value="" default>--Género--</option>
+					<option value="" disabled>---------</option>
+					<option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otro">Otro</option>
+                </select>
+		<br>
+	</fieldset>
+	<fieldset>
+		<fieldset>
+			<legend>DIRECCIÓN DE ENVIO</legend>
+			<br>
+				<label for="calle">Calle<font color="red">*</font>:</label>
+					<input type="text" id="calle" required="true" placeholder="Introduzca Calle" pattern="[A-Z]{0-100}">
+			<br>
+				<label for="numero">Número<font color="red">*</font>:</label>
+					<input type="number" pattern="[1-999]" id="numero" required="true" placeholder="Introduzca Número">
+			<br>
+				<label for="portal">Portal<font color="red">*</font>:</label>
+					<input type="number" id="portal" placeholder="Introduzca Portal" pattern="[1-100]{3}">
+			<br>
+				<label for="Piso">Planta<font color="red">*</font>:</label>
+					<input type="number" pattern="[1-100]{3}" id="Piso" placeholder="Introduzca Planta Piso">
+			<br>
+				<label for="letrapiso">Letra:</label>
+					<input type="text" pattern="[A-Z]" id="letrapiso" placeholder="Introduzca Letra Piso">
+			<br>
+				<label for="continente">Continente<font color="red">*</font>:</label>
+					<select id="continente" required="true">
+						<option value=""></option>
+						<option value="Europa">Europa</option>
+						<option value="Ámerica">Ámerica</option>
+						<option value="Oceanía">Oceanía</option>
+						<option value="África">África</option>
+						<option value="Asia">Asia</option>
+					</select>
+			<br>
+				<label for="provincia">Provincia (En Caso de España)<font color="orange">*</font>:</label>
+					 <select id="provincia">
+						 <option value=""></option>
+						<option value="La Coruña">A Coruña</option>
+						 <option value="Lugo">Lugo</option>
+						 <option value="Pontevedra">Pontevedra</option>
+						 <option value="Orense">Orense</option>
+						<option value="Asturias">Asturias</option>
+						<option value="Cantabria">Cantabria</option>
+						<option value="Guipuzcua">Guipúzcoa</option>
+						<option value="Álava">Álava</option>
+						<option value="Vizcaya">Vizcaya</option>
+						<option value="Navarra">Navarra</option>
+						<option value="Teruel">Teruel</option>
+						<option value="Zaragoza">Zaragoza</option>
+						<option value="Huesca">Huesca</option>
+						<option value="Barcelona">Barcelona</option>
+						 <option value="Tarragona">Tarragona</option>
+						<option value="Lérida">Lérida</option>
+						 <option value="Gerona">Gerona</option>
+						<option value="La Rioja">La Rioja</option>
+						<option value="León">León</option>
+						<option value="Palencia">Palencia</option>
+						<option value="Burgos">Burgos</option>
+						<option value="Soria">Soria</option>
+						<option value="La Rioja">Zamora</option>
+						<option value="La Rioja">Valladolid</option>
+						<option value="La Rioja">Segovia</option>
+						<option value="La Rioja">Salamanca</option>
+						<option value="Avila">Ávila</option>
+						<option value="Madrid">Madrid</option>
+						 <option value="Toledo">Toledo</option>
+						<option value="Cuenca">Cuenca</option>
+						<option value="Ciudad Real">Ciudad Real</option>
+						<option value="Guadalajara">Guadalajara</option>
+						 <option value="Albacete">Albacete</option>
+						<option value="Valencia">Valencia</option>
+						<option value="Alicante">Alicante</option>
+						<option value="Castellón">Castellón</option>
+						<option value="Alicante">Alicante</option>
+						 <option value="Huelva">Huelva</option>
+						 <option value="Cordoba">Córdoba</option>
+						 <option value="Sevilla">Sevilla</option>
+						 <option value="Jaen">Jaén</option>
+						 <option value="Granada">Granada</option>
+						 <option value="Malaga">Málaga</option>
+						 <option value="Cadiz">Cádiz</option>
+						 <option value="Almeria">Almeria</option>
+						<option value="Murcia">Murcia</option>
+						<option value="Ceuta">Ceuta</option>
+						 <option value="Melilla">Melilla</option>
+						<option value="Baleares">Baleares</option>
+						<option value="Las Palmas">Las Palmas</option>
+						<option value="Tenerife">Tenerife</option>
+					 </select>
+			  <br>
+		</fieldset>		
+		<fieldset>
+				<legend>DATOS ALTA USUARIO</legend>
+				<br>
+					<label for="telf">Teléfono de Contacto<font color="red">*</font>:</label>
+						<input type="text" id="telf" placeholder="Introduzca Teléfono Contacto" pattern="[0-9]{9}">
+				<br>
+					<label for="correo">Correo<font color="red">*</font>:</label>
+						<input type="email" id="correo" required="true" placeholder="Introduzca Correo"> 
+				<br>   
+					<label for="contraseña">Contraseña<font color="red">*</font>:</label>
+						<input type="password" id="contraseña" required="true" placeholder="Contraseña">
+				<br>   
+					<label for="confirmación">Confirmación de contraseña<font color="red">*</font>:</label>
+						<input type="password" id="confirmación" required="true" placeholder="Confirmación de Contraseña">
+		</fieldset>
+		<div class="erere">
+			<br><br><br>
+				<input type="checkbox" required="true">
+					Aceptar Condiciones de Uso <a href="../documentos/condicionesuso.pdf"> (Términos de Uso)</a>
+			<br><br><br>
+				 <a href="cuerpo.html"><input type="Submit" name="Enviar Datos" value="Enviar"></a>
+				 <input type="reset" name="Eliminar Datos" value="Eliminar Informacion">
+			</div>
+	</fieldset>
+</form>
+</body>
+</html>

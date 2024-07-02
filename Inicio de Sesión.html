@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio de Sesion</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/Inicio de Sesión.css">
+        <link rel="icon" type="image" href="Imagenes/imagen_2023-05-16_112614828.png">
+       
+    </head>
+    <body>
+        <script src="javascript/Inicio de Sesion.js"></script>
+        <img src="Imagenes/imagen_2023-05-16_112614828.png" id="do"></img>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+        <form method="post" action="html/Inicio.html" enctype="multipart/form-data" class="re">
+            <label  for="re">Usuario:</label>
+            <input type="text" id="re" placeholder="Nombre de Usuario" size="25" maxlength="20" onchange="novaler()">
+            <br>
+            <label for="mi">Contraseña:</label>
+            <input type="password" id="mi" placeholder="Contraseña" size="25" maxlength="20">
+            <br>
+            <p class="contraseña"><a href="html/error.html">¿Has olvidado la contraseña?</p></a>
+            <br>
+            <input type="button" value="Acceder" onclick="envio()" id="enviar" class="fondo">
+            
+        </form> 
+    </body>
+    <footer onmouseover="info()">
+        <br>
+        <br>
+        <br>
+        <br>
+        ACERCA DE
+        <br>
+        <br>
+    </footer>
+</html>

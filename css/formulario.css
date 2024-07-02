@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: orangered;
+    box-align: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	height: 20cm;
+}
+
+.we{
+    text-align: center;
+    color:#ffffff
+}
+form{
+    background: linear-gradient(rgb(148, 63, 14), #d5ba0d);
+    border-radius: 3px;
+    padding:10px;
+    width: 650px;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+    color: rgb(255, 255, 255);
+}
+fieldset{
+    background-color: rgb(88, 85, 85);
+}
+fieldset > input{
+    outline: none;
+}
+fieldset > legend{
+    text-align: center;
+}
+
+.erere{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+img{
+    border-radius: 3px;
+    padding:10px;
+    width: auto;
+    height: auto;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hora{
+	float: left;
+	font-size: large;
+	font-family: cursive;
+	color:#fff
+}
+
+.fecha{
+	font-size: large;
+	font-family: cursive;
+	text-align: right;
+	color:#fff;
+}
+
+.rer{
+	background-color: #000000;
+    width: 250px;
+    height: 50px;
+    font-family: cursive;
+    color: rgb(6, 93, 255);
+    border-radius: 15px;
+}
+
+.re{
+    background-color: #000000;
+    height: 50px;
+    font-family: cursive;
+    color: rgb(6, 93, 255);
+    border-radius: 15px;
+}
+
+input{
+    background-color: #ffffff;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+}
+
+select{
+    background-color: #ffffff;
+    font-family: cursive;
+}
+

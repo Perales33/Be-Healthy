@@ -35,6 +35,6 @@ El proyecto "Be Healthy" consiste en un sitio web diseñado para promover y faci
 - Información Educativa: Información basada en evidencia científica para guiar a los usuarios hacia decisiones saludables.
 - Interacción y Participación: Invitación a los usuarios a participar mediante formularios y recursos interactivos.
 
-### Visitar el proyecto
+## Visitar el proyecto
 
 Link: https://github.com/Perales33/Be-Healthy.git
